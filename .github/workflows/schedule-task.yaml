@@ -23,4 +23,4 @@ jobs:
       - name: Run email script
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-        run: python other/GITHUB/send_email.py # run the script to send email
+        run: python send_email.py # run the script to send email
