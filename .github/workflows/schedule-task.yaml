@@ -1,8 +1,7 @@
-name: pubmed_update
-
+name: Schedule-task 
 on:
   # schedule:
-  #   - cron: "0 5 * * *" # run once a day at midnight
+  #   - cron: "0 15 * * *" # run once everday at day at 3:00 PM
   workflow_dispatch:  # manual triggers
 
 jobs:
@@ -21,9 +20,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run PubMed Retrieval Script
+      - name: Run email script
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-        run: python other/module5/pubmed_github_action.py # run data pipeline
-
-     
+        run: python other/GITHUB/send_email.py # run the script to send email
