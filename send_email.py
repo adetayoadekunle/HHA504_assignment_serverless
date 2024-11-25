@@ -1,5 +1,5 @@
 import os
-import resend
+import resend 
 resend.api_key = os.environ["RESEND_API_KEY"]
 
 params: resend.Emails.SendParams = {
@@ -9,5 +9,5 @@ params: resend.Emails.SendParams = {
     "html": "<strong>it works!</strong>",
 }
 
-email = resend.Emails.send(params)
+email = "resend.Emails.send(params)"
 print(email)
