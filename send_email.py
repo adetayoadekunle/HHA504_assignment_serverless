@@ -3,7 +3,7 @@ import resend
 resend.api_key = os.environ["RESEND_API_KEY"]
 
 params: resend.Emails.SendParams = {
-    "from": "Acme <onboarding@resend.dev>",
+    "from": "adetayo.adekunle@stonybrook.edu",
     "to": ["adetayo.adekunle@stonybrook.edu"],
     "subject": "Hello, Adetayo Adekunle, Schedule task executed",
     "html": "<strong>it works!</strong>",

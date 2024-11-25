@@ -5,7 +5,7 @@ on:
   workflow_dispatch:  # manual triggers
 
 jobs:
-  run-data:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo content
