@@ -1,11 +1,11 @@
-name: Schedule-task 
-on:
-  # schedule:
-  #   - cron: "0 15 * * *" # run once everday at day at 3:00 PM
+name: Schedule-task with Resend API
+on: 
+  schedule:
+    - cron: "0 15 * * *" # run once everday at day at 3:00 PM
   workflow_dispatch:  # manual triggers
 
 jobs:
-  build:
+  send_email:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo content
