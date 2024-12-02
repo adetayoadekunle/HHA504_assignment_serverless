@@ -8,7 +8,7 @@ load_dotenv()
 resend.api_key = os.environ["RESEND_API_KEY"]
 
 params: resend.Emails.SendParams = {
-    "from": "adetayo.adekunle@stonybrook.edu",
+    "from": "onboarding@resend.dev",
     "to": ["adetayo.adekunle@stonybrook.edu"],
     "subject": "Hello, Adetayo Adekunle, Schedule task executed",
     "html": "<strong>it works!</strong>",
