@@ -1,6 +1,7 @@
 # HHA504_assignment_serverless
 Deploy a Serverless Function, Create a Cron Job, and Explore Functions as a Service (FaaS)
 
+**Note: I changed the name of the Repository from to HHA504_assignment_serverless**
 ## 1. Deploy a Serverless Function
 
 ### GCP
